@@ -1,7 +1,13 @@
 const Sequelize = require("sequelize");
 
-const connection = new Sequelize('nodeprojeto1','nodeproject1','N0d3J52320@',{
-    host: 'localhost',
+//ACESSO DB
+const DATABASE = "nodeprojeto1";
+const DB_USER = "nodeproject1";
+const DB_PASSWORD = "N0d3J52320@";
+const DB_HOST = "localhost"
+
+const connection = new Sequelize(DATABASE,DB_USER,DB_PASSWORD,{
+    host: DB_HOST,
     dialect: 'mysql'
 });
 
